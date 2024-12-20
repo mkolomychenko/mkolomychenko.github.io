@@ -96,6 +96,6 @@ admin_name: 'Maria's personal website'
 enable_contact: false
 
 #### Phantom Navigation menu
-enable_nav: true
+enable_nav: false
 nav_item:
   - { url: '/cv', text: 'CV', file: 'cv.pdf' }
