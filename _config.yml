@@ -93,7 +93,7 @@ pagination:
 ### Phantom settings
 footer_text: '© 2024 Maria Kolomychenko'
 admin_name: 'Maria's personal website'
-enable_contact: true
+enable_contact: false
 
 #### Phantom Navigation menu
 enable_nav: true
