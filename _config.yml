@@ -93,7 +93,7 @@ pagination:
 
 ### Phantom settings
 footer_text: '© 2024 Maria Kolomychenko'
-admin_name: 'Maria's personal website'
+admin_name: 'Maria Kolomychenko'
 google_analytics: "UA-9999999-99" # Update with your own tracking ID
 enable_contact: false
 
