@@ -18,9 +18,9 @@ email: 'jami0821@gmail.com'
 description: "Investigative journalist and researcher from Russia with a focus on the field of technology"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mkolomychenko.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'mkolomychenko'
-facebook_username: 'mkolomychenko'
 linkedin_username: 'kolomychenko'
+facebook_username: 'mkolomychenko'
+telegram_username: 'kolomychenko'
 
 # Build settings
 markdown: kramdown
