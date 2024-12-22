@@ -1,13 +1,13 @@
 ---
 layout: inner
-position: left
-title: 'Investigation'
+position: right
+title: 'Rescue Themes'
 date: 2016-02-21 15:56:00
-categories: development
-tags: JavaScript AngularJS API Sass
-featured_image: '/img/posts/02_weathercast-1130x864-2x.png'
-project_link: 'http://github.com/jamigibbs/weathercast'
-button_icon: 'github'
-button_text: 'Visit Project'
-lead_text: 'A simple weather forecast app for your favorite city.'
+categories: development design
+tags: WordPress PHP Sass
+featured_image: '/img/posts/03_rescue-themes-1130x864-2x.png'
+project_link: 'https://rescuethemes.com'
+button_text: 'Visit Rescue Themes'
+button_icon: 'wordpress'
+lead_text: 'Designed and developed all WordPress themes'
 ---
