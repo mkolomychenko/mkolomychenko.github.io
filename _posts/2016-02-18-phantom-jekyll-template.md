@@ -5,7 +5,7 @@ title: 'Research'
 date: 2016-02-20 21:15:00
 categories: research
 tags: Research Telecom Russia
-featured_image: '03_rescue-themes-1130x864-2x (3).png'
+featured_image: 'imago0201480519h_169 (1).jpg'
 project_link: 'https://dgap.org/en/research/publications/impact-and-limits-sanctions-russias-telecoms-industry'
 button_icon: 'flask'
 button_text: 'Read full version'
