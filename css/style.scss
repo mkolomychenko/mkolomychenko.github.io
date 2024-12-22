@@ -208,18 +208,30 @@ button.btn, input.btn {
 #portfolio .container {
   margin-top: 10em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 столбца на больших экранах */
-  gap: 2em; /* отступы между постами */
-
+  grid-template-columns: repeat(2, 1fr);  /* Два столбца на больших экранах */
+  gap: 2em;  /* Отступы между постами */
+  justify-items: center;  /* Центрирует элементы в ячейке сетки */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;  /* Центрирование контейнера */
+  
   @include bp-xsmall {
-    grid-template-columns: 1fr; /* 1 столбец на маленьких экранах */
+    grid-template-columns: 1fr;  /* Один столбец на маленьких экранах */
     margin-top: 2em;
   }
+}
 
-  .post-row {
-    align-items: center;
-    display: flex;
-  }
+.post {
+  background-color: #f9f9f9; /* Цвет фона для постов */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Тень вокруг постов */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
   .content-wrap {
     margin-bottom: 8em;
