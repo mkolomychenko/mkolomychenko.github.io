@@ -62,6 +62,21 @@ a {
 
 img {
   width: 100%;
+  border: 3px solid #B0B0B0;  /* Светло-серая рамка */
+  border-radius: 8px;         /* Закругленные углы */
+  padding: 5px;               /* Отступы внутри рамки */
+  transition: border-color 0.3s ease;  /* Плавное изменение цвета рамки при наведении */
+}
+
+img:hover {
+  border-color: #808080;      /* Более темный серый при наведении */
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;  /* Сохраняет пропорции изображения */
+  }
 }
 
 button.btn, input.btn {
