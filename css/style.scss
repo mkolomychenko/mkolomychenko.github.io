@@ -220,17 +220,43 @@ button.btn, input.btn {
 /*--------------------------------------------------------------
 	3.0 Posts
 --------------------------------------------------------------*/
+/* Стили для контейнера с постами */
 #portfolio .container {
   margin-top: 10em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* Два столбца */
+  gap: 2em;  /* Отступы между постами */
+
   @include bp-xsmall {
+    grid-template-columns: 1fr;  /* Один столбец на маленьких экранах */
     margin-top: 2em;
   }
-  .break {
-    margin: 8em 0;
+
+  .post-row {
+    display: flex;
+    flex-wrap: wrap;  /* Для адаптации */
+    gap: 2em; /* Отступы между постами */
+  }
+}
+
+/* Дополнительные стили для каждого поста */
+.content-wrap {
+  margin-bottom: 8em;
+  @include bp-xsmall {
+    margin-bottom: 2em;
+  }
+  @include bp-small {
+    margin-bottom: 2em;
+  }
+  
+  .content {
+    margin-top: 5em;
+    margin-left: 5em;
     @include bp-xsmall {
-      margin: 2em 0;
+      margin-left: 0;
     }
   }
+  /* Добавьте другие стили для .post или .content, если нужно */
 }
 
 .section-title {
