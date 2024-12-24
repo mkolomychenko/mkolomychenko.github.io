@@ -2,7 +2,7 @@
 layout: inner
 position: left
 title: 'Research'
-date: 2016-02-20 21:15:00
+date: 2016-02-18 21:15:00
 categories: research
 tags: Research Telecom Russia
 featured_image: 'imago0201480519h_169_fin.jpg'
