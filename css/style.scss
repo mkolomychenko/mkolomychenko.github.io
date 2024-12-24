@@ -103,12 +103,11 @@ button.btn, input.btn {
 }
 
 .main {
-  background-color: white;
-  border-left: solid 1px #cedfea;
-  border-right: solid 1px #cedfea;
-  &.container {
-    padding: 0;
-  }
+  margin-left: auto;   /* Центрируем контейнер */
+  margin-right: auto;  /* Центрируем контейнер */
+  padding-left: 0;     /* Убираем отступы слева */
+  padding-right: 0;    /* Убираем отступы справа */
+  width: 100%;         /* Контейнер занимает 100% ширины */
 }
 
 .section-jump {
