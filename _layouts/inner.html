@@ -1,15 +1,14 @@
 {% include header.html %}
 
-  <article>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-
-          {{ content }}
-
-        </div>
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Изменяем col-md-8 на col-md-12, чтобы контейнер занимал всю ширину -->
+      <div class="col-md-12">
+        {{ content }}
       </div>
     </div>
-  </article>
+  </div>
+</article>
 
 {% include footer.html %}
