@@ -218,13 +218,13 @@ button.btn, input.btn {
 }
 
 /*--------------------------------------------------------------
-	3.0 Posts
+  3.0 Posts
 --------------------------------------------------------------*/
 /* Стили для контейнера с постами */
 #portfolio .container {
   margin-top: 10em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* Два столбца */
+  grid-template-columns: repeat(2, 1fr);  /* Два столбца на больших экранах */
   gap: 2em;  /* Отступы между постами */
 
   @include bp-xsmall {
@@ -232,14 +232,31 @@ button.btn, input.btn {
     margin-top: 2em;
   }
 
+  /* Использование flex для вывода постов в два столбца */
   .post-row {
     display: flex;
-    flex-wrap: wrap;  /* Для адаптации */
-    gap: 2em; /* Отступы между постами */
+    flex-wrap: wrap;  /* Элементы могут переноситься на новую строку */
+    gap: 2em;  /* Отступы между постами */
   }
 }
 
 /* Дополнительные стили для каждого поста */
+.post {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  flex: 1 1 calc(50% - 2em);  /* Каждый пост будет занимать 50% ширины, минус отступ */
+  margin-bottom: 2em;  /* Отступ снизу */
+}
+
+@media (max-width: 768px) {
+  /* На мобильных устройствах посты занимают 100% ширины */
+  .post {
+    flex: 1 1 100%;
+  }
+}
+
 .content-wrap {
   margin-bottom: 8em;
   @include bp-xsmall {
@@ -249,61 +266,6 @@ button.btn, input.btn {
     margin-bottom: 2em;
   }
   
-  .content {
-    margin-top: 5em;
-    margin-left: 5em;
-    @include bp-xsmall {
-      margin-left: 0;
-    }
-  }
-  /* Добавьте другие стили для .post или .content, если нужно */
-}
-
-.section-title {
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 1.35em;
-    width: 3em;
-    height: 3px;
-    background-color: #ECEFF1;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-
-.section-subtitle {
-  width: 40%;
-  margin: 0 auto;
-  @include bp-xsmall {
-    width: 100%;
-  }
-  @include bp-small {
-    width: 60%;;
-  }
-}
-
-.content-wrap {
-  margin-bottom: 8em;
-  @include bp-xsmall {
-    margin-bottom: 2em;
-  }
-  @include bp-small {
-    margin-bottom: 2em;
-  }
-  img.img-responsive {
-    @include bp-xsmall {
-      display: none;
-    }
-    @include bp-small {
-      display: none;
-    }
-  }
   .content {
     margin-top: 5em;
     margin-left: 5em;
