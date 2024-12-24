@@ -253,7 +253,7 @@ button.btn, input.btn {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
   margin-bottom: 2em;  /* Отступ снизу */
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     flex: 1 1 100%;  /* На мобильных устройствах посты будут занимать 100% ширины */
   }
 }
