@@ -223,16 +223,21 @@ button.btn, input.btn {
 /* Стили для контейнера с постами */
 #portfolio .container {
   margin-top: 10em;
+  margin-left: auto;      /* Центрируем контейнер */
+  margin-right: auto;     /* Центрируем контейнер */
+  padding-left: 0;        /* Убираем отступы слева */
+  padding-right: 0;       /* Убираем отступы справа */
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* Два столбца на больших экранах */
-  gap: 2em;  /* Отступы между постами */
+  gap: 2em;               /* Отступы между постами */
+  width: 100%;            /* Контейнер занимает 100% ширины */
 
   @include bp-xsmall {
     grid-template-columns: 1fr;  /* Один столбец на маленьких экранах */
     margin-top: 2em;
   }
 
-  /* Использование flex для вывода постов в два столбца */
+  /* Убираем дополнительные стили для .post-row */
   .post-row {
     display: flex;
     flex-wrap: wrap;  /* Элементы могут переноситься на новую строку */
@@ -248,15 +253,14 @@ button.btn, input.btn {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
   flex: 1 1 calc(50% - 2em);  /* Каждый пост будет занимать 50% ширины, минус отступ */
   margin-bottom: 2em;  /* Отступ снизу */
-}
 
-@media (max-width: 768px) {
-  /* На мобильных устройствах посты занимают 100% ширины */
-  .post {
+  @media (max-width: 768px) {
+    /* На мобильных устройствах посты занимают 100% ширины */
     flex: 1 1 100%;
   }
 }
 
+/* Дополнительные стили для .content-wrap */
 .content-wrap {
   margin-bottom: 8em;
   @include bp-xsmall {
@@ -291,7 +295,7 @@ button.btn, input.btn {
         width: 100%;
       }
     }
-    button{
+    button {
       font-size: 16px;
       margin-left: 0;
       margin-bottom: 1em;
@@ -316,11 +320,12 @@ button.btn, input.btn {
 
 // vertically center content of post rows
 .post-row {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
+
 /*--------------------------------------------------------------
-	4.0 Footer
+  4.0 Footer
 --------------------------------------------------------------*/
 .site-footer {
   font-size: 14px;
