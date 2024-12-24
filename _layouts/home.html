@@ -4,35 +4,22 @@
 
     <main id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+  <div class="row">
+    {% for post in paginator.posts %}
+      <div class="col-md-6"> <!-- Изменено с col-md-12 на col-md-6 для двух столбцов -->
+        <div class="wow fadeIn">
+          {% if post.position == "left" %}
+            {% include content-left.html %}
+          {% endif %}
 
-            {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
-            {% endif %}
-            {% if site.section_subtitle != '' %}
-            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-            {% endif %}
-
-            <div class="break"></div>
-
-            {% for post in paginator.posts %}
-              <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
-
-              {% if post.position == "right" %}
-                {% include content-right.html %}
-              {% endif %}
-              </div>
-            {% endfor %}
-
-            {% include pagination.html %}
-
-          </div>
+          {% if post.position == "right" %}
+            {% include content-right.html %}
+          {% endif %}
         </div>
       </div>
+    {% endfor %}
+  </div>
+</div>
     </main>
 
 {% include footer.html %}
