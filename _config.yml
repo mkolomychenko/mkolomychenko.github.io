@@ -21,7 +21,7 @@ title                    : "Personal portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Maria Kolomychenko"
-description              : "Maria Kolomychenko - Portfolio"
+description              : "IT Journalist Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Maria Kolomychenko"
   avatar           : "/assets/img/avatar.png"
-  bio              : "IT tech journalist, deputy editor-in-chief"
+  bio              : "IT journalist, deputy editor-in-chief"
   location         : "Valencia, Spain"
   email            :
   links:
