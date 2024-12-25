@@ -115,49 +115,49 @@ analytics:
 author:
   name             : "Maria Kolomychenko"
   avatar           : "/assets/img/avatar.png"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Editor-in-Chief, IT tech journalist"
+  location         : "Valencia, Spain"
   email            :
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square fa-2x"
+      icon: "fas fa-fw fa-envelope-square"
       url: "mailto:journmary@gmail.com"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin fa-2x"
-      url: https://rs.linkedin.com/in/fundorin
+      icon: "fab fa-fw fa-linkedin"
+      url: https://rs.linkedin.com/in/mkolomychenko
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square fa-2x"
+      icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square fa-2x"
+      icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github fa-2x"
+      icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram fa-2x"
+      icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square fa-2x"
+      icon: "fas fa-fw fa-envelope-square"
       url: "mailto:journmary@gmail.com"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin fa-2x"
-      url: https://rs.linkedin.com/in/fundorin
+      icon: "fab fa-fw fa-linkedin"
+      url: https://rs.linkedin.com/in/mkolomychenko
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square fa-2x"
+      icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square fa-2x"
+      icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github fa-2x"
+      icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram fa-2x"
+      icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 
