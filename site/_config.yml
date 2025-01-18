@@ -1,6 +1,6 @@
-title: Originalnicodr
+title: Maria Kolomychenko
 
-url: "https://originalnicodr.github.io" # the base hostname & protocol for your site
+url: "https://mkolomychenko.github.io" # the base hostname & protocol for your site
 plugins:
   - jekyll-bookshop
   - cloudcannon-jekyll-bookshop
