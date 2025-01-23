@@ -19,7 +19,7 @@
   <title>How to create and host your own portfolio for free</title>
   <meta name='description' content='Need a website in which to show your work, have total control over it, and don't have to pay anything to make or host (besides your sanity)? Say no more!'>
 
-  <link rel="canonical" href="https://originalnicodr.github.io/blog/how-to-create-and-host-your-own-portfolio-for-free">
+  <link rel="canonical" href="https://originalnicodr.github.io/investigations/how-to-create-and-host-your-own-portfolio-for-free">
 
   
 
@@ -27,12 +27,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to create and host your own portfolio for free – Originalnicodr">
   <meta name="twitter:description" content="Need a website in which to show your work, have total control over it, and don&apos;t have to pay anything to make or host (besides your sanity)? Say no more!">
-  <meta name="twitter:image" content="https://originalnicodr.github.io/images/blog/post-2.jpg">
+  <meta name="twitter:image" content="https://originalnicodr.github.io/images/investigations/post-2.jpg">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:title" content="How to create and host your own portfolio for free – Originalnicodr">
   <meta property="og:description" content="Need a website in which to show your work, have total control over it, and don&apos;t have to pay anything to make or host (besides your sanity)? Say no more!">
-  <meta property="og:image" content="https://originalnicodr.github.io/images/blog/post-2.jpg">
+  <meta property="og:image" content="https://originalnicodr.github.io/images/investigations/post-2.jpg">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -94,7 +94,7 @@
               
                 
                 <li class="nav__item">
-                  <a href="/blog/" class="nav__link">Blog</a>
+                  <a href="/investigations/" class="nav__link">Blog</a>
                 </li>
                 
               
@@ -105,7 +105,7 @@
               
                 
                 <li class="nav__item">
-                  <a href="/projects/" class="nav__link">Projects</a>
+                  <a href="/research/" class="nav__link">Projects</a>
                 </li>
                 
               
@@ -168,7 +168,7 @@
       
       <div class="col col-6 col-d-12">
         <div class="post-image">
-          <img loading="lazy" src="/images/blog/post-2.jpg" alt="How to create and host your own portfolio for free">
+          <img loading="lazy" src="/images/investigations/post-2.jpg" alt="How to create and host your own portfolio for free">
         </div>
       </div>
       
@@ -244,7 +244,7 @@
 
 <p>After you do that, it’s time for you to look up a template you like! This will be how your site will look like. You will probably want a template that has a list of blog posts or something with images on its home page that you can click and will send you to that post. What we will be doing is using those to create virtual photography albums, but you can do this with whatever you want. So go to <a href="https://jekyllthemes.io/">jekyllthemes.io</a> (or other sites that display themes) and pick one you like. It might also be useful if the template has an “about me” page that we can use, but most of them have one already. For this tutorial, we will be using <a href="https://jekyllthemes.io/theme/millennial">this theme</a>, but please pick the one you like! If you run into trouble trying to set one up yourself, you can always grab the <a href="https://github.com/Sonozki/sonozki.github.io">repository</a> of the site we will be making as an example here and edit that to your liking. But it would be pretty cool if you can try to do this with your own theme beforehand to have variety.</p>
 
-<p align="center"><img src="/images/blog/post-2/original-theme.jpg" /></p>
+<p align="center"><img src="/images/investigations/post-2/original-theme.jpg" /></p>
 
 <p>Also, you can technically not use any theme and build the site from the ground up yourself, but that would require some knowledge of HTML and CSS, besides knowing a bit more about how Jekyll works.</p>
 
@@ -387,11 +387,11 @@ banner-offset: 5
 
 <p>And that’s it! If the paths of the js are correct we should be able to see something like the following:</p>
 
-<p align="center"><img src="/images/blog/post-2/crappy-grid.jpg" /></p>
+<p align="center"><img src="/images/investigations/post-2/crappy-grid.jpg" /></p>
 
 <p>Now, we notice that the images don’t look quite right, as if they are being resized. This is because the theme is trying to change the size of all the images inside posts. To fix this, we will need to go to the .scss file that is handling this. It’s probably <code class="language-plaintext highlighter-rouge">_base.scss</code>, but just to make sure right-click the image on the grid, click on inspect, and look at its styles properties for any <code class="language-plaintext highlighter-rouge">.img</code> that might be there. It should tell you from what file said style is coming from. After deleting the part of the css code that handles images (in our case it’s <code class="language-plaintext highlighter-rouge">base img{ [...] }</code>) the images should look fine now, great!</p>
 
-<p align="center"><img src="/images/blog/post-2/nice-grid.jpg" /></p>
+<p align="center"><img src="/images/investigations/post-2/nice-grid.jpg" /></p>
 
 <h2 id="optional-customizing-the-pigjs-library">Optional: Customizing the pig.js library</h2>
 
@@ -420,7 +420,7 @@ banner-offset: 5
 
 <p>If we go to the main page of our site, we notice that the album isn’t displaying any image in the list. So what we will do is go to whatever HTML file displays the list of albums first. You should be able to find it by searching for <code class="language-plaintext highlighter-rouge">post.image</code> on the files (recommend using VSCode or a similar IDE that allows you to easily search strings inside multiple files on a folder). In the theme at hand, is in <code class="language-plaintext highlighter-rouge">featured-post.html</code>.</p>
 
-<p align="center"><img src="/images/blog/post-2/crappy-album-card.jpg" /></p>
+<p align="center"><img src="/images/investigations/post-2/crappy-album-card.jpg" /></p>
 
 <p>There are multiple ways in which a theme can display these images. In the case of our theme it’s doing so with the style property <code class="language-plaintext highlighter-rouge">background-image</code>. So to display our “card-image” here we will modify the div class that has this background-image property for the following:</p>
 
@@ -436,7 +436,7 @@ banner-offset: 5
 
 <p>Also please note that both of these code blocks will work if the name of the variable on which the for loop is iterating is called post. To check that that is the case look up the closest <code class="language-plaintext highlighter-rouge">{% for ... %}</code> line to where we are editing this. In our case since featured-post.html is the file used to display the album in a list, we have to look up where this is being called from. So by looking for the string {% include featured-post.html %} we found that it’s being used in category.html, and in there we can see that the closest for loop is using “post” as the variable, so we can just use the first code block I wrote above as it is.</p>
 
-<p align="center"><img src="/images/blog/post-2/nice-album-card.jpg" /></p>
+<p align="center"><img src="/images/investigations/post-2/nice-album-card.jpg" /></p>
 
 <p>That part was probably more complicated than it needed to be, so if you have problems getting this to work let me know.</p>
 
@@ -566,7 +566,7 @@ DISCORD_CHANNEL=randomchannelname
 <p>There is more stuff that you may want to do to improve your site even further. Maybe the theme you choose already has some of these, but I will link them just in case:</p>
 
 <ul>
-<li>• <a href="https://brianbunke.com/blog/2017/09/06/twitter-cards-on-jekyll/">Add Twitter cards</a>: That image that is displayed when linking your site in Twitter for example)</li>
+<li>• <a href="https://brianbunke.com/investigations/2017/09/06/twitter-cards-on-jekyll/">Add Twitter cards</a>: That image that is displayed when linking your site in Twitter for example)</li>
 <li>• <a href="https://michaelsoolee.com/google-analytics-jekyll/">Add Google analytics</a>: To be able to track some data regarding people using your site.</li>
 <li>• <a href="https://github.com/erikw/jekyll-google_search_console_verification_file">Google search engine</a>: To index your site into Google's search engine, so it appears in search results.</li>
 <li>• <a href="https://github.com/jekyll/jekyll-sitemap">jekyll-sitemap</a>: Also useful (needed?) to index subpages from your site into google.</li>
@@ -590,19 +590,19 @@ DISCORD_CHANNEL=randomchannelname
   <ul class="share__list list-reset">
     <li class="share__item">
       <a class="share__link share__twitter"
-        href="https://twitter.com/intent/tweet?text=How%20to%20create%20and%20host%20your%20own%20portfolio%20for%20free&url=https://originalnicodr.github.io/blog/how-to-create-and-host-your-own-portfolio-for-free"
+        href="https://twitter.com/intent/tweet?text=How%20to%20create%20and%20host%20your%20own%20portfolio%20for%20free&url=https://originalnicodr.github.io/investigations/how-to-create-and-host-your-own-portfolio-for-free"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>
     </li>
     <li class="share__item">
       <a class="share__link share__facebook"
-        href="https://www.facebook.com/sharer/sharer.php?u=https://originalnicodr.github.io/blog/how-to-create-and-host-your-own-portfolio-for-free"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://originalnicodr.github.io/investigations/how-to-create-and-host-your-own-portfolio-for-free"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>
     </li>
     <li class="share__item">
       <a class="share__link share__linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&url=https://originalnicodr.github.io/blog/how-to-create-and-host-your-own-portfolio-for-free&title=How%20to%20create%20and%20host%20your%20own%20portfolio%20for%20free&summary=Need%20a%20website%20in%20which%20to%20show%20your%20work,%20have%20total%20control%20over%20it,%20and%20don't%20have%20to%20pay%20anything%20to%20make%20or%20host%20(besides%20your%20sanity)?%20Say%20no%20more!&source=Originalnicodr"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://originalnicodr.github.io/investigations/how-to-create-and-host-your-own-portfolio-for-free&title=How%20to%20create%20and%20host%20your%20own%20portfolio%20for%20free&summary=Need%20a%20website%20in%20which%20to%20show%20your%20work,%20have%20total%20control%20over%20it,%20and%20don't%20have%20to%20pay%20anything%20to%20make%20or%20host%20(besides%20your%20sanity)?%20Say%20no%20more!&source=Originalnicodr"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on LinkedIn" rel="nofollow"><i class="ion ion-logo-linkedin"></i></a>
     </li>
@@ -1167,8 +1167,8 @@ DISCORD_CHANNEL=randomchannelname
 
     
     <div class="c-blog-card__image-wrap">
-      <a class="c-blog-card__image" href="/blog/how-we-made-a-high-quality-image-gallery-without-paying-a-single-dime">
-        <img loading="lazy" src="/images/blog/post-1.jpg" alt="How we made a high quality image gallery without paying a single dime">
+      <a class="c-blog-card__image" href="/investigations/how-we-made-a-high-quality-image-gallery-without-paying-a-single-dime">
+        <img loading="lazy" src="/images/investigations/post-1.jpg" alt="How we made a high quality image gallery without paying a single dime">
       </a>
     </div>
     
@@ -1188,7 +1188,7 @@ DISCORD_CHANNEL=randomchannelname
       
 
       <h2 class="c-blog-card__title">
-        <a href="/blog/how-we-made-a-high-quality-image-gallery-without-paying-a-single-dime">How we made a high quality image gallery without paying a single dime</a>
+        <a href="/investigations/how-we-made-a-high-quality-image-gallery-without-paying-a-single-dime">How we made a high quality image gallery without paying a single dime</a>
       </h2>
 
       <p class="c-blog-card__excerpt">
@@ -1780,11 +1780,11 @@ DISCORD_CHANNEL=randomchannelname
           </li>
           
           <li class="footer_nav__item">
-            <a href="/blog/" class="footer_nav__link">Blog</a>
+            <a href="/investigations/" class="footer_nav__link">Blog</a>
           </li>
           
           <li class="footer_nav__item">
-            <a href="/projects/" class="footer_nav__link">Projects</a>
+            <a href="/research/" class="footer_nav__link">Projects</a>
           </li>
           
           <li class="footer_nav__item">

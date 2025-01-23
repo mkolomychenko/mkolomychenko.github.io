@@ -1,4 +1,4 @@
-// Based on randomwits.com/blog/dark-mode-jekyll
+// Based on randomwits.com/investigations/dark-mode-jekyll
 darkmode()
 
 document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
