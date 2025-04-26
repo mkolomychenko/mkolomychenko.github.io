@@ -5891,4 +5891,13 @@
   margin: 10px 0 0 18px;
 }
 
+.project-inner-card img {
+  width: 100%;
+  max-width: 800px; /* можно поставить любое значение, например 600px, 700px, 800px */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* чтобы по центру и отступ снизу */
+  border-radius: 12px; /* опционально - красиво скруглить края */
+}
+
 /*# sourceMappingURL=main.css.map */
