@@ -5891,13 +5891,16 @@
   margin: 10px 0 0 18px;
 }
 
+.project-inner-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .project-inner-card img {
-  width: 30%;
-  max-width: 800px; /* можно поставить любое значение, например 600px, 700px, 800px */
-  height: 50%;
-  display: block;
-  margin: 0 auto 20px auto; /* чтобы по центру и отступ снизу */
-  border-radius: 12px; /* опционально - красиво скруглить края */
+  width: 300px; /* можно сделать 350px или 400px если хочешь еще больше */
+  height: auto;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
