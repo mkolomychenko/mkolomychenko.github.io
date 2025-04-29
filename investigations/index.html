@@ -635,28 +635,27 @@ Meduza
 <!--bookshop-live name(pagination.jekyll.html) params() context() -->
           <!-- begin pagination -->
 <nav class="pagination">
-      <div class="container">
-        <div class="pagination__inner">
-          <div class="pagination__list">
-            {% if paginator.previous_page %}
-              <a class="pagination__prev" href="{{ paginator.previous_page_path }}"><i class="ion ion-ios-arrow-back"></i> Prev</a>
-            {% else %}
-              <span class="pagination__prev disabled"><i class="ion ion-ios-arrow-back"></i> Prev</span>
-            {% endif %}
+  <div class="container">
+    <div class="pagination__inner">
 
-            <div class="pagination__count">
-              Page <span>{{ paginator.page }}</span> of <span>{{ paginator.total_pages }}</span>
-            </div>
+      <div class="pagination__list">
+        
+        
+        <span class="pagination__prev enabled"><i class="ion ion-ios-arrow-back"></i> Prev</span>
 
-            {% if paginator.next_page %}
-              <a class="pagination__next" href="{{ paginator.next_page_path }}">Next <i class="ion ion-ios-arrow-forward"></i></a>
-            {% else %}
-              <span class="pagination__next disabled">Next <i class="ion ion-ios-arrow-forward"></i></span>
-            {% endif %}
-          </div>
+        <div class="pagination__count">
+          Page <span>1</span>
+          of <span>2</span>
         </div>
+
+        
+        
+        <span class="pagination__next enabled">Next <i class="ion ion-ios-arrow-forward"></i></span>
       </div>
-    </nav>
+
+    </div>
+  </div>
+</nav>
 <!-- end pagination -->
 
   <div class="container animate">
