@@ -4016,7 +4016,12 @@
     height: 100%;
     opacity: 1; /* Показываем затемнение всегда */
     visibility: visible;
-    background: linear-gradient(360deg, rgba(20, 149, 167, 0.5) 0%, rgba(0, 54, 135, 0.3) 120.95%);
+    background: linear-gradient(
+  360deg,
+  rgba(20, 149, 167, 0.4) 0%,       /* верх — немного прозрачный */
+  rgba(20, 149, 167, 0.6) 30%,      /* середина — чуть плотнее */
+  rgba(0, 54, 135, 0.3) 120.95%     /* низ, как в оригинале */
+);
     transition: none;
   }
 
