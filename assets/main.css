@@ -4099,6 +4099,7 @@
     transform: none;
     opacity: 1; /* Всегда видно */
     color: #fff;
+    font-weight: 500;
     transition: none;
   }
 }
