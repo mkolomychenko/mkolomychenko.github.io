@@ -4045,6 +4045,15 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .c-album-card__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: right center; /* важно: сдвиг влево, чтобы видно было правую часть */
+  }
+}
+
 @media all, bookshop {
   .c-album-card__content {
     position: relative;
