@@ -5970,13 +5970,12 @@
   border-radius: 12px;
 }
 .project-details {
-  display: block !important;
-  color: red !important;
-  font-size: 16px !important;
-  background: yellow !important;
-  max-height: none !important;
-  overflow: visible !important;
-  position: relative !important;
-  z-index: 1000 !important;
+  display: block;
+  color: inherit; /* унаследует цвет текста с сайта */
+  font-size: 16px;
+  line-height: 1.6;
+  background: transparent;
+  max-height: none;
+  overflow: visible;
 }
 /*# sourceMappingURL=main.css.map */
