@@ -2983,6 +2983,39 @@
     color: #666;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .project-inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-description {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .project-details {
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    overflow: visible;
+    max-height: none;
+    color: #000; /* можно изменить под вашу цветовую схему */
+  }
+
+  .project-footer {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
 @media all, bookshop {
   .top {
     position: fixed;
